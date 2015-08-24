@@ -1,0 +1,21 @@
+#ifndef ERRORHANDLE_H_INCLUDED
+#define ERRORHANDLE_H_INCLUDED
+
+// ErrorMessage
+#define JVERR_PRIVATE_KEY_NOT_EXIST		1
+#define JVERR_PW_MIN_LENGTH_NOT_EXIST	2
+#define JVERR_PW_MAX_LENGTH_NOT_EXIST	3
+#define JVERR_PW_CHARSET_NOT_EXIST		4
+#define JVERR_PW_CHARSET_TOO_LONG		5
+#define JVERR_PW_INITIAL_NOT_EXIST		6
+#define JVERR_PW_INITIAL_NOT_VALID		7
+#define JVERR_PW_CHARSET_DUPLICATE		8
+
+//W arningMessage
+#define JVWARN_NOT_ENOUGH_ARGV			101
+#define JVWARN_NOT_VALID_ARGV			102
+
+void JVErrorHandle(int code);
+void JVWarnHandle(int code);
+void JV_Help ();
+#endif // ERRORHANDLE_H_INCLUDED
